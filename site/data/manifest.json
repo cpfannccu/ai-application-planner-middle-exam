@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-09-02",
+  "question_count": 300,
+  "paper_count": 6,
+  "image_count": 92,
+  "papers": [
+    {
+      "year": 114,
+      "session": 2,
+      "session_label": "第二次",
+      "subject_code": 1,
+      "subject_name": "人工智慧技術應用與規劃",
+      "paper_code": "114-2",
+      "source_pdf": "114年第二次_中級_科目1_人工智慧技術應用與規劃_公告試題.pdf",
+      "question_count": 50
+    },
+    {
+      "year": 114,
+      "session": 2,
+      "session_label": "第二次",
+      "subject_code": 2,
+      "subject_name": "大數據處理分析與應用",
+      "paper_code": "114-2",
+      "source_pdf": "114年第二次_中級_科目2_大數據處理分析與應用_公告試題.pdf",
+      "question_count": 50
+    },
+    {
+      "year": 114,
+      "session": 2,
+      "session_label": "第二次",
+      "subject_code": 3,
+      "subject_name": "機器學習技術與應用",
+      "paper_code": "114-2",
+      "source_pdf": "114年第二次_中級_科目3_機器學習技術與應用_公告試題.pdf",
+      "question_count": 50
+    },
+    {
+      "year": 115,
+      "session": 1,
+      "session_label": "第一次",
+      "subject_code": 1,
+      "subject_name": "人工智慧技術應用與規劃",
+      "paper_code": "115-1",
+      "source_pdf": "115年第一次_中級_科目1_人工智慧技術應用與規劃_公告試題.pdf",
+      "question_count": 50
+    },
+    {
+      "year": 115,
+      "session": 1,
+      "session_label": "第一次",
+      "subject_code": 2,
+      "subject_name": "大數據處理分析與應用",
+      "paper_code": "115-1",
+      "source_pdf": "115年第一次_中級_科目2_大數據處理分析與應用_公告試題.pdf",
+      "question_count": 50
+    },
+    {
+      "year": 115,
+      "session": 1,
+      "session_label": "第一次",
+      "subject_code": 3,
+      "subject_name": "機器學習技術與應用",
+      "paper_code": "115-1",
+      "source_pdf": "115年第一次_中級_科目3_機器學習技術與應用_公告試題.pdf",
+      "question_count": 50
+    }
+  ]
+}
