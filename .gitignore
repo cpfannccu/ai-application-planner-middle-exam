@@ -1,0 +1,6 @@
+tmp/
+outputs/**/*.inspect.ndjson
+.git-codex-paused/
+local-data/
+__pycache__/
+*.py[cod]
