@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-09-02T10:57:23+08:00",
+  "items": {
+    "114-2-L-S1-Q001": {
+      "markdown": "情感分析（又稱意見探勘 Opinion Mining）的核心任務即是透過自然語言處理技術，自動識別並分類文本中的主觀態度與情緒極性（如正向 Positive、負向 Negative、中立 Neutral），以量化評估顧客對產品或服務的滿意度與評價。",
+      "images": [],
+      "updated_at": "2026-09-02",
+      "revision": "d82b058ef63bf75df4ac23640114fd55deaf7da77aa19a7dad4ccd6a9001d328"
+    },
+    "114-2-L-S1-Q002": {
+      "markdown": "核心機制：自注意力機制（Self-Attention Mechanism）。\n\n長文本優勢：傳統循環神經網路（RNN、LSTM）採用循序遞歸處理，在面對長文本時容易產生梯度消失（Vanishing Gradient）或遠距離資訊遺忘的問題。\n\n突破點：Transformer 透過自注意力機制，使序列中任意兩個詞彙之間能直接計算語意關聯權重（距離為 O(1)），具備卓越的長距離依賴（Long-Range Dependencies）捕捉能力；同時具備高度平行化運算優勢，顯著提升長篇文件的翻譯精確度與流暢度。",
+      "images": [],
+      "updated_at": "2026-09-02",
+      "revision": "b217edec75a3b4f8ab2749da22ade52b3b00ede1cfa012b80a03f3cd219bcd44"
+    },
+    "114-2-L-S1-Q003": {
+      "markdown": "模型架構：BERT 採用 Transformer 的 Encoder（編碼器） 架構，具備真正的雙向（Bidirectional）上下文表徵能力，不同於傳統單向語言模型，它能同時整合左側與右側的語意脈絡。\n\n預訓練任務：\nMLM（Masked Language Model，遮蔽語言模型）：隨機遮蔽句子中 15% 的詞彙並讓模型預測，迫使模型結合雙向上下文理解語意。\n\nNSP（Next Sentence Prediction，下一句預測）：學習句子之間的段落連貫性與邏輯關係。\n\n適用場景：BERT 最擅長自然語言理解（NLU）任務（如文本分類、命名實體辨識 NER、語意比對、抽取式問答 QA），但不適用於自回歸式的長篇文本連續生成（生成任務多採用 GPT 等 Decoder-only 架構）。",
+      "images": [],
+      "updated_at": "2026-09-02",
+      "revision": "a43700d0a04f832bac54113c54341e7366161605453e048b81211775216e8915"
+    }
+  }
+}
