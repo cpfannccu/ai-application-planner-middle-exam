@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex,nofollow">
+    <title>中級題庫解析編輯器</title>
+    <link rel="stylesheet" href="./editor.css">
+  </head>
+  <body>
+    <header class="topbar">
+      <div>
+        <h1>中級題庫解析編輯器</h1>
+        <p>僅限本機｜草稿不會出現在正式網站</p>
+      </div>
+      <div class="topbar-actions">
+        <span class="save-status" id="save-status" role="status">準備中</span>
+        <button class="button button-primary" id="publish-button" type="button">發布已審核解析</button>
+      </div>
+    </header>
+
+    <main class="editor-layout" id="editor-layout" hidden>
+      <aside class="question-sidebar">
+        <div class="filter-stack">
+          <label>
+            <span>搜尋題目</span>
+            <input id="search-input" type="search" placeholder="題號、關鍵字或 ID">
+          </label>
+          <div class="filter-row">
+            <label><span>科目</span><select id="subject-filter"><option value="">全部科目</option></select></label>
+            <label><span>狀態</span><select id="status-filter"><option value="">全部狀態</option></select></label>
+          </div>
+        </div>
+        <div class="question-count" id="question-count"></div>
+        <div class="question-list" id="question-list" aria-label="題目清單"></div>
+      </aside>
+
+      <section class="question-preview">
+        <div class="preview-heading">
+          <div>
+            <span class="status-badge" id="status-badge"></span>
+            <h2 id="question-title"></h2>
+          </div>
+          <code id="question-id"></code>
+        </div>
+        <p class="question-text" id="question-text"></p>
+        <div class="question-images" id="question-images"></div>
+        <ol class="option-list" id="option-list"></ol>
+        <p class="official-answer" id="official-answer"></p>
+      </section>
+
+      <section class="explanation-editor">
+        <div class="editor-heading">
+          <div>
+            <h2>非官方解析</h2>
+            <p id="editor-state-help"></p>
+          </div>
+          <div class="editor-actions">
+            <button class="button" id="review-button" type="button">標記已審核</button>
+            <button class="button button-danger" id="unpublish-button" type="button" hidden>取消發布</button>
+          </div>
+        </div>
+
+        <div class="toolbar" aria-label="Markdown 工具列">
+          <button type="button" data-wrap="**" title="粗體">粗體</button>
+          <button type="button" data-prefix="- " title="項目清單">清單</button>
+          <button type="button" data-block="```\n\n```" title="程式碼區塊">程式碼</button>
+          <button type="button" data-wrap="`" title="行內程式碼">行內碼</button>
+          <button type="button" data-link title="連結">連結</button>
+        </div>
+        <textarea id="markdown-input" rows="14" maxlength="50000" placeholder="輸入 Markdown 解析。修改後會自動保存為草稿。"></textarea>
+
+        <div class="image-drop" id="image-drop" tabindex="0">
+          <strong>加入解析圖片</strong>
+          <span>拖放、貼上，或選擇 PNG／JPEG／WebP（每張最多 8 MB）</span>
+          <button class="button" id="choose-image" type="button">選擇圖片</button>
+          <input id="image-input" type="file" accept="image/png,image/jpeg,image/webp" multiple hidden>
+        </div>
+        <div class="asset-list" id="asset-list"></div>
+
+        <div class="preview-panel">
+          <h3>解析預覽</h3>
+          <div id="markdown-preview" class="markdown-content muted-empty">尚未輸入解析。</div>
+        </div>
+      </section>
+    </main>
+
+    <section class="loading" id="loading" role="status">正在載入題庫與本機草稿…</section>
+    <section class="fatal" id="fatal" role="alert" hidden></section>
+    <div class="toast" id="toast" role="status" hidden></div>
+
+    <script type="module" src="./editor.js"></script>
+  </body>
+</html>
